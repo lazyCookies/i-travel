@@ -1,2 +1,12 @@
-p {
+.box{
+    height: 7.04rem;
+    width: 100%;
+}
+.box img{
+    height: 7.04rem;
+    width: 100%;
+}
+.box1{
+    height: 3.2533rem;
+    width: 100%;
 }
