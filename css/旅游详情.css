@@ -1,3 +1,10 @@
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
 .box{
     height: 7.04rem;
     width: 100%;
@@ -9,4 +16,143 @@
 .box1{
     height: 3.2533rem;
     width: 100%;
+}
+.box2{
+    height: 3.2533rem;
+    width: 8.6667rem;
+    margin: 0 auto;
+}
+.w1{
+    font-size: .4533rem;
+    margin-top: .2667rem;
+}
+.w2{
+    width: 2.6667rem;
+    height: .4rem;
+    position: relative;
+    overflow: hidden;
+}
+.w3{
+    position: absolute;
+    top: -5.64rem;
+    left: -0.52rem;
+}
+.w4{
+    width: 2.6667rem;
+    height: .8rem;
+    font-size: .5067rem;
+    color: red;
+    float: left;
+}
+.q1{
+    font-size: .2133rem;
+}
+.q2{
+    font-size: .24rem;
+    color: gray;
+}
+.box3{
+    height: .8rem;
+    width: 8.6667rem;
+}
+.w5{
+    float: left;
+    color: gray;
+    background-color: gainsboro;
+    border: .0133rem gray solid;
+    margin-left: .1333rem;
+    margin-top: .2667rem;
+}
+.box4{
+    height: 2.9467rem;
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom: .0133rem gainsboro solid;
+    border-top: .0133rem gainsboro solid;
+}
+.box5{
+    height: 2.6933rem;
+    width: 100%;
+    background-color: #fdeacc;
+}
+.box6{
+    height: 2.6933rem;
+    width: 8.6667rem;
+    margin: 0 auto;
+    position: relative;
+}
+.box7{
+    height: 1.3467rem;
+    width: 100%;
+    font-size: .32rem;
+}
+.long{
+    color: red;
+    border: .0133rem red solid;
+    float: left;
+    border-radius: .0667rem;
+    margin-top: .5067rem;
+}
+.long1{
+    float: left;
+    margin-top: .2667rem;
+    margin-left: .2667rem;
+}
+.w6{
+    background-color: red;
+    color: white;
+    margin-top: .2rem;
+}
+.w7{
+    margin-top: .0667rem;
+}
+.box8{
+    height: .2667rem;
+    width: .2667rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 8.4667rem;
+    font-size: .5067rem;
+    color: gray;
+
+}
+.net{
+    height: 6.6267rem;
+    width: 100%;
+    background-color: whitesmoke;
+    border-bottom: .0133rem gainsboro solid;
+}
+.net1{
+    height: 6.36rem;
+    width: 100%;
+    background-color: white;
+    border-bottom: .0133rem gainsboro solid;
+}
+.net2{
+    height: 6.36rem;
+    width: 8.6667rem;
+    margin: 0 auto;
+}
+.net3{
+    height: .6667rem;
+    width: 2.1333rem;
+    line-height: .6667rem;
+    float: left;
+    border-right: .0133rem gray solid;
+    margin-top: .5333rem;
+    font-size: .4267rem;
+}
+.net4{
+    height: .6667rem;
+    width: 6.5333rem;
+    line-height: .6667rem;
+    float: left;
+    margin-top: .5333rem;
+    font-size: .3467rem;
+}
+.net5{
+    color: red;
+}
+.q3{
+    margin-left: .32rem;
 }
