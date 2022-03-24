@@ -269,3 +269,18 @@ footer {
   width: 0.6667rem /* 50px -> .6667rem */;
   background-size: 1400% auto;
 }
+.footer-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-img span{
+  display: inline-block;
+  margin-top: .1333rem /* 10px -> .1333rem */;
+  font-size: .32rem /* 24px -> .32rem */;
+  color: #999999;
+}
+.menu-active{
+  color: #1448ae !important;
+}
