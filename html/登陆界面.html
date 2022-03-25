@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/lazyLoad.js"></script>
+    <script src="../lib/touch-0.2.14.js"></script>
+    <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="../lib/LCalendar/LCalendar.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../lib/LCalendar/LCalendar.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
+    <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
+    <script src="../lib/flexible.js"></script>
+    <link rel="stylesheet" href="../css/登录界面.css">
+    <title>登陆界面</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+    <div class="header">
+        <img src="../img/登录.img/01-登录界面_01.jpg" alt="">
+    </div>
+    <div class="nav">
+        <div class="nav-left"><img src="../img/登录.img/01-登录界面_04.jpg" alt=""></div>
+        <div class="nav-zj"><strong>登录</strong></div>
+        <div class="nav-right">注册</div>
+
+    </div>
+    <div class="nr">
+        <div class="nr-left"><strong>登录名</strong></div>
+        <div class="nr-zj1"><input type="text" value="手机号码/用户名/邮箱" style="border:none;outline:none;margin-left: .4667rem /* 35px -> .4667rem */;" onfocus="if(value=='手机号码/用户名/邮箱')value=''" onblur="if(!value)value='手机号码/用户名/邮箱'" name="keyword" > </div>
+        <div class="nr-right1"><img src="../img/登录.img/01-登录界面_08.jpg" alt=""></div>
+
+    </div>
+    <div class="nr">
+        <div class="nr-left"><strong>密码</strong></div>
+        <div class="nr-zj"><input type="text" value="登陆密码" style="border:none;outline:none;margin-left: .4667rem /* 35px -> .4667rem */;" onfocus="if(value=='登陆密码')value=''" onblur="if(!value)value='登陆密码'" name="keyword" > </div>
+        <div class="nr-right"><img src="../img/登录.img/01-登录界面_11.jpg" alt=""></div>
+
+    </div>
+    <div class="dl">
+      <strong>登录</strong>
+    </div>
+    <div class="dl-wz">
+       <div class="wz-left">登陆遇到问题？</div>
+       <div class="wz-right">境外手机登录</div>
+
+      </div>
+      <div class="dl-tp">
+        <img src="../img/登录.img/01-登录界面_03.jpg" alt="">
+
+ 
+       </div>
+    </div>
+</div>
+    <script src="../lib/swiper5.4.5/swiper.min.js"></script>
+    <script>
+        $('.nr-right1').click(function () {
+           $('.nr-zj1 input').val('')
+        })
+    </script>
+</body>
+</html>
