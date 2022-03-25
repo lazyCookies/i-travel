@@ -1,0 +1,161 @@
+footer {
+    width: 100%;
+    background-color: #ededed;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.2667rem /* 20px -> .2667rem */ 0rem;
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    z-index: 20;
+  }
+  .footer-img > i {
+    display: inline-block;
+  }
+  .footer-img:first-child i {
+    background: url(../img/sprites.png) top 10.8% left 6.3% no-repeat;
+    height: 0.6267rem /* 47px -> .6267rem */;
+    width: 0.72rem /* 54px -> .72rem */;
+    background-size: 1400% auto;
+  }
+  .footer-img:nth-child(2) i {
+    background: url(../img/sprites.png) top 10.8% left 18% no-repeat;
+    height: 0.64rem /* 48px -> .64rem */;
+    width: 0.6533rem /* 49px -> .6533rem */;
+    background-size: 1450% auto;
+  }
+  .footer-img:nth-child(3) i {
+    background: url(../img/sprites.png) top 11.067% left 30% no-repeat;
+    height: 0.6667rem /* 50px -> .6667rem */;
+    width: 0.7067rem /* 53px -> .7067rem */;
+    background-size: 1400% auto;
+  }
+  .footer-img:last-child i {
+    background: url(../img/sprites.png) top 19.2% left 42.067% no-repeat;
+    height: 0.6667rem /* 50px -> .6667rem */;
+    width: 0.6667rem /* 50px -> .6667rem */;
+    background-size: 1400% auto;
+  }
+  .footer-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-img span {
+    display: inline-block;
+    margin-top: 0.1333rem /* 10px -> .1333rem */;
+    font-size: 0.32rem /* 24px -> .32rem */;
+    color: #999999;
+  }
+  .menu-active {
+    color: #1448ae !important;
+  }
+  
+*{
+    padding: 0;
+    margin: 0;
+}
+.dd{
+    display: flex;
+    width: 100%;
+    height: 2rem /* 150px -> 2rem */ /* 200px -> 2.6667rem */;
+    background-color: #1748AC;
+   overflow: hidden;
+        justify-content:space-around ;
+}
+.l{
+  line-height: 2rem /* 150px -> 2rem */ /* 100px -> 1.3333rem */ /* 200px -> 2.6667rem */;
+  font-size: .5rem;
+    color: white;
+}
+.z{
+  line-height: 2rem /* 150px -> 2rem */; /* 525px -> 7rem */;
+  font-size: .5rem /* 30px -> .4rem */;
+    color: white;
+}
+.r{
+    line-height: 2rem /* 150px -> 2rem */;
+    font-size: .5rem /* 25px -> .3333rem */;
+    color: white;
+}
+.nr{
+    width: 90%;
+  
+    background-color:white;
+    margin: 0 auto;
+}
+.nrl{
+    width: 10%;
+    height: .6667rem /* 50px -> .6667rem */;
+    float: left;
+    background-color: white;
+    font-size: .2667rem /* 20px -> .2667rem */ /* 25px -> .3333rem */;
+    
+}
+.xt{
+    width: .0133rem /* 1px -> .0133rem */ /* 10px -> .1333rem */;
+    margin-left: 30%;
+   height: 2rem /* 150px -> 2rem */;;
+    border: .0133rem /* 1px -> .0133rem */ solid #D8D8D8;
+}
+.xx{
+    width: .0133rem /* 1px -> .0133rem */;
+    margin-left: 50%;
+    height: 9rem;
+    border: .0133rem /* 1px -> .0133rem */ solid white;
+}
+.nrl img{
+  width: 80%;
+  /* 100px -> 1.3333rem */ /* 50px -> .6667rem */; /* 100px -> 1.3333rem *//* 50px -> .6667rem */;
+    
+}
+.nrr{
+    width:90%;
+    /* 300px -> 4rem *//* 400px -> 5.3333rem */ /* 500px -> 6.6667rem */;
+    float: left;
+    margin-top: .4rem /* 30px -> .4rem */ /* 10px -> .1333rem */ /* 100px -> 1.3333rem */ /* 200px -> 2.6667rem */;
+    
+    background-color:#F3F3F3;
+    padding: .1333rem /* 10px -> .1333rem */;
+    border-radius: 8px;
+}
+.nrrl{
+    width: 73%;
+   height: 2.6667rem /* 200px -> 2.6667rem */; /* 250px -> 3.3333rem */;
+    background-color:#F3F3F3;
+    
+float: left;
+line-height: .6667rem /* 50px -> .6667rem */ /* 20px -> .2667rem */ /* 10px -> .1333rem */;
+font-size: .4rem /* 30px -> .4rem */ /* 25px -> .3333rem */;
+
+
+
+}
+
+.p1{
+   
+    margin-top: 2.5rem;
+    color: #F68D28;
+    margin-top: .5rem;
+    font-size: .5333rem /* 40px -> .5333rem */ /* 50px -> .6667rem */ /* 30px -> .4rem */;
+}
+.p1 span{
+    color: black;
+    font-size: .4rem /* 30px -> .4rem */;
+}
+.nrrr{
+    width: 20%;
+    height: 2.6667rem /* 200px -> 2.6667rem */; /* 400px -> 5.3333rem */;
+    background-color:#F3F3F3;
+    float: left;
+    border-radius:0 .0133rem /* 1px -> .0133rem */ .0133rem /* 1px -> .0133rem */ 0 ;
+    margin-left: .5333rem /* 40px -> .5333rem */;
+}
+.nrrr img{
+    width: 100%;
+    height:1.3333rem /* 100px -> 1.3333rem */;
+    margin-top: .6667rem /* 50px -> .6667rem */;
+     /* 30px -> .4rem */;
+   
+}
