@@ -3,40 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
     <script src="../lib/jquery-3.6.0.js"></script>
     <script src="../lib/lazyLoad.js"></script>
     <script src="../lib/touch-0.2.14.js"></script>
     <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="../lib/flexible.js"></script>
+    <link rel="stylesheet" href="../css/旅游首页.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
     <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
-    <title>登陆界面</title>
+    <title>旅游首页</title>
 </head>
 <body>
+
+   
     <div class="wrapper">
         <div class="content">
+          <!-- 轮播图 -->
             <!-- swiper -->
-            <!-- <div class="swiper">
+             <div class="swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide"><img src="../img/travel_index/travel_index_banner_01.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/travel_index/travel_index_banner_02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/travel_index/travel_index_banner_03.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="../img/travel_index/travel_index_banner_04.jpg" alt=""></div>
                 </div>
-                如果需要分页器
+                <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
-                
-                如果需要导航按钮
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
-                如果需要滚动条
-                <div class="swiper-scrollbar"></div>
-            </div> -->
+            </div>
+
+            <!-- 头部 -->
+    <div class="header">
+        <div class="header_left"><img src="../img/travel_index/travel_icon_1.jpg" alt=""></div>
+        <div class="header_input">
+            <div class="input-left"><i class="iconfont icon-weizhi"></i><span>北京</span></div>
+            <div class="input-right">
+                <i class="iconfont icon-sousuo"></i>
+                <input type="text" placeholder="目的地/关键词">
+            </div>
         </div>
     </div>
+
+    <!-- 导航栏 -->
+    <div class="nav">
+        <ul class="nav_list cleafix">
+            <li class="nav_item">
+                <div class="nav_img">
+                    <img src="../img/travel_index/travel_index_nav_01.jpg" alt="">
+                </div>
+                <div class="nav_txt">
+                    <p>出境游</p>
+                </div>
+            </li>
+            <li class="nav_item">
+                <div class="nav_img">
+                    <img src="../img/travel_index/travel_index_nav_02.jpg" alt="">
+                </div>
+                <div class="nav_txt">
+                    <p>国内游</p>
+                </div>
+            </li>
+            <li class="nav_item">
+                <div class="nav_img">
+                    <img src="../img/travel_index/travel_index_nav_03.jpg" alt="">
+                </div>
+                <div class="nav_txt">
+                    <p>周边游</p>
+                </div>
+            </li>
+            <li class="nav_item">
+                <div class="nav_img">
+                    <img src="../img/travel_index/travel_index_nav_04.jpg" alt="">
+                </div>
+                <div class="nav_txt">
+                    <p>当地游</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 内容 -->
+    <div class="main cleafix">
+        <div class="main_left fl"><img src="../img/travel_index/travel_index_1.jpg" alt=""></div>
+        <div class="main_right fl"><img src="../img/travel_index/travel_index_2.jpg" alt=""></div>
+        <div class="main_right fl"><img src="../img/travel_index/travel_index_3.jpg" alt=""></div>
+        <div class="main_left fl"><img src="../img/travel_index/travel_index_4.jpg" alt=""></div>
+    </div>
+
+    <div class="floor">
+        <div class="floor_top">
+            <img src="../img/travel_index/travel_icon_2.jpg" alt="">
+            <a>出境游</a><span>世界太大，我想去走走</span>
+        </div>
+        <ul class="item cleafix">
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_5.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>曼谷+芭提雅6日5晚自由行(4钻)</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥3060</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_6.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>美国东西海岸+夏威夷+波士顿+纽约+华盛顿+拉...</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥9099</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="item cleafix">
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_7.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>日本东京+大阪7日6晚自 由行【美食·购物】</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥5353</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_8.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>意大利+梵蒂冈+瑞士+法 国+维罗纳13日跟团游...</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥13999</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="item cleafix">
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_9.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>普吉岛6日5万自由行·DIY自由订制,酒店任选海...</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥1999</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+            <li>    
+                <div class="item_img">
+                    <img src="../img/travel_index/travel_index_10.jpg" alt="" srcset="">
+                </div>
+                <div class="item_txt">
+                    <p>澳大利亚悉尼+黄金海岸+墨尔本自由行·11天9晚...</p>
+                    <div class="item_price">
+                        <a>席位充足</a>
+                        <span>￥1999</span><p>起</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="footer-img"><i></i><span>首页</span></div>
+        <div class="footer-img"><i></i><span>目的地</span></div>
+        <div class="footer-img"><i></i><span>浏览历史</span></div>
+        <div class="footer-img"><i></i><span class="menu-active">个 人</span></div>
+    </footer>
+  </div>  <!--wrapper -->
+ </div> <!--content -->
+
     <script src="../lib/swiper5.4.5/swiper.min.js"></script>
     <script>
         // swiper
@@ -51,16 +202,6 @@
                 el: '.swiper-pagination',
             },
             
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            
-            // 如果需要滚动条
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
         })        
         //lazyload
         $(function() {
@@ -68,8 +209,16 @@
         //batterscroll
         window.onload = function () {
             bs.refresh();
-            const bs = new BScroll('.div');
+            const bs = new BScroll('.wrapper');
         }
+
+         //footer
+         let menu = ['../html/首页.html','../html/目的地.html','../html/浏览历史.html','../html/我的.html'];
+        $('.footer-img').click(function () {
+            $('.footer-img').children().removeClass('menu-active');
+            $('.footer-img').eq($(this).index()).children().addClass('menu-active');
+            window.open(`${menu[$(this).index()]}`)
+        })
     </script>
 </body>
 </html>
