@@ -8,7 +8,11 @@
     height: 7rem;
     background-color: #1748AC;
    overflow: hidden;
+
         justify-content:space-around ;
+
+        justify-content:space-between ;
+
 }
 .l{
     line-height: 7rem;
@@ -46,8 +50,10 @@
 }
 .nr1l img{
     margin-right:1rem ;
+
     width: 20px;
     height: 20px;
+
 }
 .nr1r{
     font-size: 1.5rem;
@@ -136,27 +142,33 @@
     line-height: 6.5rem;
     color: white;
 }
+
 .dbl img{
     width: 4rem;
     height: 4rem;
 }
+
 .dbz{
     font-size: 1.6rem;line-height: 6.5rem;
     color: white;
 }
+
 .dbz img{
     width: 4rem;
     height: 4rem;
 }
+
 .dbr{
     font-size: 1.6rem;line-height: 6.5rem;
     color: white;
 }
+
 .dbr img{
     width:3rem;
     height: 3rem;
     margin-left: 2rem;
 }
+
 .dbrk{
     width: 1rem;
     height: 1rem;
