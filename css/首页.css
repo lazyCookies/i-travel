@@ -3,7 +3,7 @@ footer {
     background-color: #ededed;
     display: flex;
     justify-content: space-around;
-    padding: 0.2667rem /* 20px -> .2667rem */ 0rem;
+    padding: .2667rem  0rem;
     position: fixed;
     bottom: 0%;
     left: 0%;
