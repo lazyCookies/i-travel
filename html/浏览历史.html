@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
     <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/flexible.js"></script>
     <script src="../lib/lazyLoad.js"></script>
     <script src="../lib/touch-0.2.14.js"></script>
     <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
@@ -15,9 +16,115 @@
     <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
     <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
-    <title>登陆界面</title>
+    <link rel="stylesheet" href="../css/浏览历史.css">
+    <title>
+        浏览历史
+    </title>
 </head>
 <body>
+    <div class="dd">
+        <div class="l"><</div>
+        <div class="z">浏览历史</div>
+        <div class="r">清空</div>
+
+    </div>
+    <div class="nr">
+        <div class="nrl">
+            今天
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xt"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>云南昆明+大理+丽江+西双版纳8日7晚跟团游·享4飞经典套餐...
+               <p class="p1">￥2900<span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_06.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="nr">
+        <div class="nrl">
+            
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xt"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>海南三亚6日5晚跟团游(5钻)纯 玩薄款·限时促！红树林酒店1... 
+               <p class="p1">¥3969 <span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_10.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="nr">
+        <div class="nrl">
+            
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xx"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>摄影之旅·广西桂林+漓江+阳朔 +南宁+德天瀑布+巴马+北海...
+               <p class="p1"> ¥3021<span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_12.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="nr">
+        <div class="nrl">
+            昨天
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xx"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>乐园游·泰国普吉岛7日跟团游 (5钻)·【A线直飞】0自费 全程... 
+               <p class="p1"> ¥5596<span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_15.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="nr">
+        <div class="nrl">
+            前天
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xt"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>巴厘岛7日5晚自由行(5钻)2晚 私密别墅+3晚海边酒店·蜜月...
+               <p class="p1"> ¥5963<span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_17.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <div class="nr">
+        <div class="nrl">
+       
+            <img src="../img/首页/images/06-浏览历史_03.jpg" alt="">
+<div class="xx"></div>
+
+        </div>
+        <div class="nrr">
+            <div class="nrrl"><p>九江+景德镇+婺源4日跟团游 (4钻)·花开正浓 梯田花海深... 
+               <p class="p1"> ¥2966<span>起</span></p>
+            </p></div>
+            <div class="nrrr"><img src="../img/首页/images/images/06-浏览历史_19.jpg" alt=""></div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer-img"><i></i><span>首页</span></div>
+        <div class="footer-img"><i></i><span>目的地</span></div>
+        <div class="footer-img"><i></i><span>浏览历史</span></div>
+        <div class="footer-img"><i></i><span class="menu-active">个 人</span></div>
+    </footer>
+
     <div class="wrapper">
         <div class="content">
             
@@ -33,6 +140,12 @@
             bs.refresh();
             const bs = new BScroll('.div');
         }
+        let menu = ['../html/首页.html','../html/目的地.html','../html/浏览历史.html','../html/我的.html'];
+        $('.footer-img').click(function () {
+            $('.footer-img').children().removeClass('menu-active');
+            $('.footer-img').eq($(this).index()).children().addClass('menu-active');
+            window.open(`${menu[$(this).index()]}`)
+        })
     </script>
 </body>
 </html>
