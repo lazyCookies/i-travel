@@ -85,11 +85,12 @@
                     </ul>
                 </div>
             </section>
+            <!-- footer -->
             <footer>
-                <div class="footer-img"><i></i><span></span></div>
-                <div class="footer-img"><i></i><span></span></div>
-                <div class="footer-img"><i></i><span></span></div>
-                <div class="footer-img"><i></i><span></span></div>
+                <div class="footer-img"><i></i><span>首页</span></div>
+                <div class="footer-img"><i></i><span>目的地</span></div>
+                <div class="footer-img"><i></i><span>浏览历史</span></div>
+                <div class="footer-img"><i></i><span class="menu-active">个 人</span></div>
             </footer>
         </div>
     </div>
@@ -103,6 +104,15 @@
             bs.refresh();
             const bs = new BScroll('.wrapper');
         }
-    </script>
+        //footer
+        let menu = ['../html/首页.html','../html/目的地.html','../html/浏览历史.html','../html/我的.html'];
+        let top1 = ['19.067%','19.067%','19.434%','19.2%'];
+        $('.footer-img').click(function () {
+            $('.footer-img').children().removeClass('menu-active');
+            $('.footer-img').eq($(this).index()).children().addClass('menu-active');
+            window.open(`${menu[$(this).index()]}`)
+            $(this).children().css('background-position-y',`${top1[$('.footer-img').index(this)]}`).parent().siblings().children().css('background-position-y',``)
+        })
+    </script> 
 </body>
 </html>

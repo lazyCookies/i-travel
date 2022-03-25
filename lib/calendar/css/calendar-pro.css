@@ -1,0 +1,105 @@
+.demo-box {
+  width: 100%;
+  overflow: hidden;
+  background: #eef5fd;
+  border: 1px solid #e6e8eb;
+}
+/*******单独组件样式********/
+.calendar-box * {
+  box-sizing: border-box;
+}
+.ht-rili-head {
+  overflow: hidden;
+}
+.ht-rili-querybox {
+  overflow: hidden;
+}
+.ht-rili-title {
+  padding: 0.2667rem /* 20px -> .2667rem */;
+  display: inline-block;
+  max-width: 5.3333rem /* 400px -> 5.3333rem */;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.ht-rili-datebox {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.2667rem /* 20px -> .2667rem */;
+}
+.ht-rili-date {
+  text-align: center;
+  display: inline-block;
+  width: 2.6667rem /* 200px -> 2.6667rem */;
+  height: 0.5067rem /* 38px -> .5067rem */;
+  line-height: 0.5067rem /* 38px -> .5067rem */;
+  vertical-align: middle;
+}
+.ht-rili-leftarr {
+  display: inline-block;
+  width: 0.6667rem /* 50px -> .6667rem */;
+  height: 0.5067rem /* 38px -> .5067rem */;
+  background: url("../img/left-arr.png") left center no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.ht-rili-rightarr {
+  display: inline-block;
+  width: 0.6667rem /* 50px -> .6667rem */;
+  height: 0.5067rem /* 38px -> .5067rem */;
+  background: url("../img/right-arr.png") right center no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.ht-rili-th {
+  width: 14.25%;
+  float: left;
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+  height: 1.0667rem /* 80px -> 1.0667rem */;
+  line-height: 1.0667rem /* 80px -> 1.0667rem */;
+  /*background: #E66B14;*/
+  color: #1ab2db;
+}
+.ht-rili-td {
+  width: 14.25%;
+  float: left;
+  text-align: center;
+  height: 1.3333rem /* 100px -> 1.3333rem */;
+  /*line-height: 50px;*/
+  background: #eef5fd;
+  padding-top: 0.1333rem /* 10px -> .1333rem */;
+  /*border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;*/
+  cursor: pointer;
+}
+.ht-rili-body {
+  overflow: hidden;
+  padding-bottom: 0.2667rem /* 20px -> .2667rem */;
+}
+.ht-rili-day {
+  font-family: Arial;
+  font-size: 0.48rem /* 36px -> .48rem */;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+}
+.ht-rili-money {
+  font-family: Arial;
+  display: inline-block;
+  width: 100%;
+  font-size: 0.32rem /* 24px -> .32rem */;
+  color: #1ab2db;
+}
+.ht-rili-td-disabled {
+  color: #bfc4ca;
+}
+.ht-rili-td-active {
+  border-radius: 0.1067rem /* 8px -> .1067rem */;
+  background: #80b3e8;
+}
