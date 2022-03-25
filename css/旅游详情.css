@@ -220,6 +220,11 @@
     width: 100%;
     position: absolute;
 }
+.dabox{
+    height: 22.6667rem;
+    width: 100%;
+    margin-bottom: 1.3333rem;
+}
 .ss{
     height: 22.6667rem;
     width: 100%;
@@ -329,4 +334,36 @@
 }
 .nm{
     margin-top: .2667rem;
+}
+.foot{
+    height: 1.3333rem;
+    width: 100%;
+    display: inline-flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border: .0267rem gainsboro solid;
+}
+.foot1{
+    width: 60%;
+    background-color: whitesmoke;
+    display: inline-flex;
+    
+}
+.foot2{
+    width: 40%;
+    background-color: orange;
+    line-height: 1.3333rem;
+    text-align: center;
+    color: white;
+    font-size: .4533rem;
+}
+.omg{
+    height: 100%;
+    width: 33.3%;
+    border-right: .0267rem gainsboro solid;
+    font-size: .6667rem;
+    color: gray;
+    line-height: 1.3333rem;
+    text-align: center;
 }
