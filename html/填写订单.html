@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
     <script src="../lib/jquery-3.6.0.js"></script>
     <script src="../lib/lazyLoad.js"></script>
@@ -15,24 +15,114 @@
     <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
     <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/flexible.js"></script>
+    <link rel="stylesheet" href="../css/填写订单.css">
     <title>登陆界面</title>
+    
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
-            
+          
+             <div class="nav">
+                 <div class="nav-left"><img src="../img/登录.img/04-目的地_02 .jpg" alt=""></div>
+                 <div class="nav-zj"><strong>选择目的地</strong></div>
+                 <div class="nav-right"></div>
+         
+             </div>
+             <div class="nr">
+                 <div class="nr-s"><p class="q"> <strong>三亚5日4晚半自助游套餐</strong></p></div>
+                 <div class="nr-z"><p class="w">出发日期: <strong>2017-9-10</strong></p></div>
+                 <div class="nr-x"><p class="e">出行人数: <strong>3成人</strong></p> <p class="r">预定限制></p></div>
+        
+             </div>
+             <div class="nr-1">
+                 <div class="nr-1-p">
+                    <div class="nr-1-s"><p class="q"> <strong>去选择出行人</strong></p></div>
+                    <div class="nr-1-z"><p class="w">为了您顺利出行</p></div>
+                    <div class="nr-1-x"><p class="e">请务必保持填写项与出游所持证件一致</p></div>
+                 </div>
+                 
+                 <img src="../img/登录.img/05-5-填写订单_03.jpg" alt="">
+             </div>
+             <div class="nr-2">
+                <div class="nr-2-p">
+                    <div class="nr-2-s"><p class="q">苏塔苏大</p></div>
+                   <div class="nr-2-s"><p class="q">苏大大</p></div>
+                   <div class="nr-2-z"><p class="w">为了您顺利出行</p></div>
+                   <div class="nr-2-x"><p class="e">请务必保持填写项与出游所持证件一致</p><p class="t">更换出行人员></p></div>
+                </div>
+                
+                <img src="../img/登录.img/05-5-填写订单_06.jpg" alt="">
+            </div>
+            <div class="nr-3">
+                <div class="nr-3-p">
+                   <div class="nr-3-s"><p class="q"> 去选择出行人</p></div>
+                   <div class="nr-3-z"><p class="w">请填写联系人姓名</p></div>
+                   <div class="nr-3-x"><p class="e">请填写电话号码</p><p class="y">1365407586</div>
+                </div>
+                
+                <img src="../img/登录.img/05-5-填写订单_08.jpg" alt="">
+            </div>
+            <div class="nr-4">
+                <div class="nr-4-p">
+                   <div class="nr-4-s"><p class="q">一张券可用</p></div>
+                   
+                </div>
+                
+                <img src="../img/登录.img/05-5-填写订单_10.jpg" alt="">
+            </div>
+            <div class="nr-5">
+                <div class="nr-5-p">
+                   <div class="nr-5-s"><p class="u">发票</p><p class="i">不需要发票</p></div>
+                   
+                   <div class="nr-5-s"><p class="u">特殊要求</p><p class="i">无</p></div>
+
+                </div>
+                
+                <img src="../img/登录.img/05-5-填写订单_12.jpg" alt="">
+            </div>
+            <div class="nr-6">
+                <div class="nr-6-p">
+                    <div class="nr-6-s"><p>！ 航班价格变动频繁</p><p> 请再提交订单后25分钟内完成支付</p></div>
+                    <div class="nr-6-s"><p>！ 点击下一步表示已阅读并同意 <span class="b2">预定须知和重要条款</span></p></div>
+                    <div class="nr-6-s"><p>！ 为支持绿色环保,默认电子合同,若需要签署纸质合同请致电客服</p></div>
+
+                </div>
+                
+               
+            </div>
+            <div class="nr-7">
+                <div class="nr-71"><p class="b">￥6512 <span class="b1">明细></span></p></div>
+                <div class="nr-72">去支付</div>
+
+            </div>
+             <!-- footer -->
+    <footer>
+        <div class="footer-img"><i></i><span>首页</span></div>
+        <div class="footer-img"><i></i><span>目的地</span></div>
+        <div class="footer-img"><i></i><span>浏览历史</span></div>
+        <div class="footer-img"><i></i><span class="menu-active">个 人</span></div>
+    </footer>
         </div>
     </div>
     <script src="../lib/swiper5.4.5/swiper.min.js"></script>
     <script>
-        //lazyload
-        $(function() {
+      //lazyload
+      $(function() {
         $("img.lazyload").lazyload()});
         //batterscroll
         window.onload = function () {
             bs.refresh();
-            const bs = new BScroll('.div');
+            const bs = new BScroll('.wrapper');
         }
+        let menu = ['../html/首页.html','../html/目的地.html','../html/浏览历史.html','../html/我的.html'];
+        $('.footer-img').click(function () {
+            $('.footer-img').children().removeClass('menu-active');
+            $('.footer-img').eq($(this).index()).children().addClass('menu-active');
+            window.open(`${menu[$(this).index()]}`)
+        })
     </script>
 </body>
 </html>

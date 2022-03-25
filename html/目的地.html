@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
     <script src="../lib/jquery-3.6.0.js"></script>
     <script src="../lib/lazyLoad.js"></script>
@@ -15,24 +14,160 @@
     <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
     <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
-    <title>登陆界面</title>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/flexible.js"></script>
+    <link rel="stylesheet" href="../css/目的地.css">
+    <title></title>
+    
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
-            
-        </div>
+   
+    <div class="nav">
+        <div class="nav-left"><img src="../img/登录.img/04-目的地_02 .jpg" alt=""></div>
+        <div class="nav-zj"><strong>选择目的地</strong></div>
+        <div class="nav-right"></div>
+
     </div>
+    <div class="ssk">
+       <i><img src="../img/登录.img/04-目的地_03.jpg" alt=""></i>
+       <input type="text" value="春季旅游节" style="border:none;outline:none;color: white;" onfocus="if(value=='春季旅游节')value=''" onblur="if(!value)value='春季旅游节'" name="keyword" > 
+    </div>
+    <div class="nr">
+     <div class="nr-left">
+         <div class="nr-left-s">
+             <img src="../img/登录.img/sprites-恢复的_07.png" alt="" id="q">
+             <div class="c">热门</div>
+            </div>
+         <div class="nr-left-z"><img src="../img/登录.img/sprites-恢复的_04.png" alt="" id="w">
+            <div class="v">国内</div>
+        </div>
+         <div class="nr-left-x"><img src="../img/登录.img/sprites-恢复的_05.png" alt="" id="e">
+            <div class="b">国外</div></div>
+
+     </div>
+     <div class="nr-right">
+         <div class="nr-right-1">
+             <div class="r1"><img src="../img/登录.img/04-目的地_03-14.jpg" alt=""><p>上海迪士尼</p></div>
+             <div class="r2"><img src="../img/登录.img/04-目的地_05.jpg" alt="">云南</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_09.jpg" alt=""><p>厦门</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_10.jpg" alt="">香港</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_13.jpg" alt=""><p>法国</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_05.jpg" alt="">泰国</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_10.jpg" alt=""><p>厦门</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_13.jpg" alt="">香港</div>
+         </div>
+         <div class="nr-right-2">
+            <div class="r1"><img src="../img/登录.img/04-目的地_05.jpg" alt=""><p>上海迪士尼</p></div>
+             <div class="r2"><img src="../img/登录.img/04-目的地_09.jpg" alt="">云南</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_10.jpg" alt=""><p>厦门</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_13.jpg" alt="">香港</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_03-14.jpg" alt=""><p>法国</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_09.jpg" alt="">泰国</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_05.jpg" alt=""><p>法国</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_10.jpg" alt="">泰国</div>
+         </div>
+         <div class="nr-right-3">
+            <div class="r1"><img src="../img/登录.img/04-目的地_03-14.jpg" alt=""><p>上海迪士尼</p></div>
+             <div class="r2"><img src="../img/登录.img/04-目的地_10.jpg" alt="">云南</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_05.jpg" alt=""><p>厦门</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_09.jpg" alt="">香港</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_05.jpg" alt=""><p>法国</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_10.jpg" alt="">泰国</div>
+             <div class="r3"><img src="../img/登录.img/04-目的地_03-14.jpg" alt=""><p>法国</p></div>
+             <div class="r4"><img src="../img/登录.img/04-目的地_09.jpg" alt="">泰国</div>
+         </div>
+        </div>
+        <footer>
+            <div class="footer-img"><i></i><span>首页</span></div>
+            <div class="footer-img"><i></i><span>目的地</span></div>
+            <div class="footer-img"><i></i><span>浏览历史</span></div>
+            <div class="footer-img"><i></i><span class="menu-active">个 人</span></div>
+        </footer>
+    </div>
+</div>
+</div>
     <script src="../lib/swiper5.4.5/swiper.min.js"></script>
     <script>
-        //lazyload
-        $(function() {
-        $("img.lazyload").lazyload()});
-        //batterscroll
-        window.onload = function () {
-            bs.refresh();
-            const bs = new BScroll('.div');
+       var imgBg=document.getElementById("q");
+       var imgBh=document.getElementById("w");
+       var imgBj=document.getElementById("e");
+		imgBg.onclick=function(){
+			imgBg.src="../img/登录.img/sprites-恢复的_07.png"
+            imgBh.src="../img/登录.img/sprites-恢复的_04.png"
+            imgBj.src="../img/登录.img/sprites-恢复的_05.png"
+
+		}
+        
+		imgBh.onclick=function(){
+			imgBh.src="../img/登录.img/sprites-恢复的_08.png"
+            imgBg.src="../img/登录.img/sprites-恢复的_03.png"
+            imgBj.src="../img/登录.img/sprites-恢复的_05.png"
+
+
+		}
+        
+		imgBj.onclick=function(){
+			imgBj.src="../img/登录.img/sprites-恢复的_09.png"
+            imgBh.src="../img/登录.img/sprites-恢复的_04.png"
+            imgBg.src="../img/登录.img/sprites-恢复的_03.png"
+
+		}
+        var z=document.querySelector('.nr-left-s')
+        z.onclick=function(){
+            $('.nr-right-1').css('display','block');
+            $('.c').css('color','blue')
+            $('.v').css('color','black')
+            $('.b').css('color','black')
+            $('.nr-left-x').css('border-left','white solid 0');
+            $(this).css('border-left','gold solid .1333rem /* 10px -> .1333rem */');
+            $('.nr-left-z').css('background-color','#F3F3F3');
+            $(this).css('background-color','#FEFEFE');
+            $('.nr-left-x').css('background-color','#F3F3F3');
+            $('.nr-left-z').css('border-left','white solid 0');
+            $('.nr-right-3').css('display','none');
+            $('.nr-right-2').css('display','none');
         }
+        var z1=document.querySelector('.nr-left-z')
+        z1.onclick=function(){
+            $('.nr-right-2').css('display','block');
+            $('.nr-left-s').css('background-color','#F3F3F3');
+            $(this).css('background-color','#FEFEFE');
+            $('.nr-left-x').css('background-color','#F3F3F3');
+
+            $('.v').css('color','blue')
+            $('.c').css('color','black')
+            $('.b').css('color','black')
+            $('.nr-left-s').css('border-left','white solid 0');
+            $('.nr-left-x').css('border-left','white solid 0');
+            $(this).css('border-left','gold solid .1333rem /* 10px -> .1333rem */');
+            $('.nr-right-1').css('display','none');
+            $('.nr-right-3').css('display','none');
+        }
+        var z2=document.querySelector('.nr-left-x')
+        z2.onclick=function(){
+            $('.nr-right-3').css('display','block');
+            $('.b').css('color','blue')
+            $('.c').css('color','black')
+            $('.v').css('color','black')
+            $(this).css('border-left','gold solid .1333rem /* 10px -> .1333rem */');
+            $('.nr-left-s').css('border-left','white solid 0');
+            $('.nr-left-z').css('border-left','white solid 0');
+            $('.nr-left-s').css('background-color','#F3F3F3');
+            $(this).css('background-color','#FEFEFE');
+            $('.nr-left-z').css('background-color','#F3F3F3');
+
+            $('.nr-right-1').css('display','none');
+            $('.nr-right-2').css('display','none');
+            
+        }
+        let menu = ['../html/首页.html','../html/目的地.html','../html/浏览历史.html','../html/我的.html'];
+        $('.footer-img').click(function () {
+            $('.footer-img').children().removeClass('menu-active');
+            $('.footer-img').eq($(this).index()).children().addClass('menu-active');
+            window.open(`${menu[$(this).index()]}`)
+        })
     </script>
 </body>
 </html>
