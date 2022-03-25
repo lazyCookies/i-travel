@@ -1,2 +1,93 @@
-p {
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+} */
+.box{
+    height: 1.0667rem;
+    width: 100%;
+    font-size: .4533rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .2667rem;
+}
+.box1{
+    width: 1.3333rem;
+    height: 1.0667rem;
+    text-align: center;
+    line-height: 1.0667rem;
+}
+.box2{
+    width: 2.6667rem;
+    height: 1.0667rem;
+    text-align: center;
+    line-height: 1.0667rem;
+    margin-right: .8rem;
+}
+.box3{
+    height: 1.0667rem;
+    width: 8.6667rem;
+    border-bottom: .0267rem gainsboro solid;
+    margin: 0 auto;
+    line-height: 1.0667rem;
+    font-size: .3733rem;
+}
+.q1{
+    margin-right: .6667rem;
+}
+.box3 input{
+    height: .6rem;
+    border: none;
+    outline: none;
+}
+.q2{
+    margin-right: 1.1333rem;
+}
+.q3{
+    margin-right: .7333rem;
+}
+.box4{
+    height: .8rem;
+    width: 1.7333rem;
+    background-color: gainsboro;
+    float: right;
+    font-size: .3333rem;
+    color: white;
+    line-height: .8rem;
+    margin-top: .1333rem;
+}
+.w1{
+    margin-top: .8rem;
+}
+.net{
+    height: 1.0667rem;
+    width: 8.6667rem;
+    margin: 0 auto;
+    background-color: orange;
+    font-size: .4533rem;
+    color: white;
+    line-height: 1.0667rem;
+    text-align: center;
+    margin-top: 1.3333rem;
+}
+.net-1{
+    height: .8rem;
+    width: 1.8667rem;
+    background-color: gainsboro;
+    color: white;
+    line-height: .8rem;
+    float: right;
+    text-align: center;
+}
+.qq{
+    border: none;
+}
+.qq1{
+    margin-top: .5333rem;
 }
