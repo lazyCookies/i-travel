@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/lazyLoad.js"></script>
+    <script src="../lib/touch-0.2.14.js"></script>
+    <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="../lib/LCalendar/LCalendar.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../lib/LCalendar/LCalendar.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
+    <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
+    <title>登陆界面</title>
+    <style>
+        /* 日期选择插件 */
+        html,
+    body {
+        margin: 0 auto;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        -webkit-user-select: none;
+    }
+    
+    body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        -webkit-text-size-adjust: 100%; /*关闭自动调整字体*/
+        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    input {
+        width: 90%;
+        height: 40px;
+        font-size: 18px;
+        border: 1px solid #b72f20;
+        border-radius: 5px;
+        margin: 20px 5% 0 5%;
+        padding: 5px;
+    }
+    
+    h1 {
+        background-color: #b72f20;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    }
+    </style>
+    <link rel="stylesheet" href="../lib/LCalendar/LCalendar.css">
+    <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                
+                <!-- 日期选择插件 -->
+                <!-- <div>
+                    <h1>LCalendar</h1>
+                    <div>
+                        <input id="demo1" type="text" readonly="" placeholder="日期选择特效" data-lcalendar="2016-05-11,2016-05-11" />
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    <script src="../lib/swiper5.4.5/swiper.min.js"></script>
+    <script src="../lib/LCalendar/LCalendar.js"></script>
+    <script>
+        //日期选择插件
+        var calendar = new LCalendar();
+    calendar.init({
+        'trigger': '#demo1', //标签id
+        'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+        'minDate': '1900-1-1', //最小日期
+        'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1) + '-' + new Date().getDate() //最大日期
+    });
+    var calendardatetime = new LCalendar();
+    calendardatetime.init({
+        'trigger': '#demo2',
+        'type': 'datetime'
+    });
+    var calendartime = new LCalendar();
+    calendartime.init({
+        'trigger': '#demo3',
+        'type': 'time'
+    });
+    var calendarym = new LCalendar();
+    calendarym.init({
+        'trigger': '#demo4',
+        'type': 'ym',
+        'minDate': '1900-1',
+        'maxDate': new Date().getFullYear() + '-' + (new Date().getMonth() + 1)
+    });
+    //lazyload
+    $(function() {
+        $("img.lazyload").lazyload()});
+        //batterscroll
+        window.onload = function () {
+            bs.refresh();
+            const bs = new BScroll('.div');
+        }
+    </script>
+    </body>
+    </html>
