@@ -17,7 +17,7 @@
     <script src="../lib/jquery-3.6.0.js"></script>
     <script src="../lib/flexible.js"></script>
     <link rel="stylesheet" href="../css/目的地.css">
-    <title></title>
+    <title>目的地</title>
     
 </head>
 <body>
@@ -167,6 +167,9 @@
             $('.footer-img').children().removeClass('menu-active');
             $('.footer-img').eq($(this).index()).children().addClass('menu-active');
             window.open(`${menu[$(this).index()]}`)
+        })
+        $('.tmr').click(function () {
+            window.open('../html/旅游列表.html');
         })
     </script>
 </body>

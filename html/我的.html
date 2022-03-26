@@ -113,6 +113,16 @@
             window.open(`${menu[$(this).index()]}`)
             $(this).children().css('background-position-y',`${top1[$('.footer-img').index(this)]}`).parent().siblings().children().css('background-position-y',``)
         })
+        //跳转
+        $('.head-img').click(function () {
+            window.open('../html/登陆界面.html')
+        })
+        $('.top>p>i').click(function () {
+            window.open('../html/首页.html');
+        })
+        $('.menu-top>div:first').click(function () {
+            window.open('../html/我的订单.html');
+        })
     </script> 
 </body>
 </html>
