@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/flexible.js"></script>
+    <script src="../lib/lazyLoad.js"></script>
+    <script src="../lib/touch-0.2.14.js"></script>
+    <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="../lib/LCalendar/LCalendar.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../lib/LCalendar/LCalendar.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
+    <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
+    <link rel="stylesheet" href="../css/注册界面.css">
+    <title>登陆界面</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <div class="box">
+                <div class="box1"><</div>
+                <div class="box2"><strong>注册</strong></div>
+                <div></div>
+            </div>
+            <div class="box3 w1">
+                <span class="q1">国家/地区</span>   中国大陆 86
+            </div>
+            <div class="box3">
+                <span class="q2">手机号</span>   <input class="net-11" type="text" placeholder="常用手机号">
+            </div>
+            <div class="box3">
+                <span class="q2">验证码</span>   <input class="lingg" type="text" placeholder="短信验证码">
+                <div class="box4">获取验证码</div>
+            </div>
+            <div class="box3">
+                <span class="q3">设置密码</span>   <input class="ling" type="password" placeholder="6~12位大小写字母、数字">
+            </div>
+            <div class="net">
+                注册
+            </div>
+            <div class="box3 qq qq1"><div class="net-1">重新发送</div></div>
+            <div class="box3 qq"><div class="net-1">60s</div></div>
+
+
+
+
+        </div>
+    </div>
+    <script src="../js/注册界面.js"></script>
+    <script src="../lib/swiper5.4.5/swiper.min.js"></script>
+    <script>
+        //lazyload
+        $(function() {
+        $("img.lazyload").lazyload()});
+        //batterscroll
+        window.onload = function () {
+            bs.refresh();
+            const bs = new BScroll('.div');
+        }
+    </script>
+</body>
+</html>
