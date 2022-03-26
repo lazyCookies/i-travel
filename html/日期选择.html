@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="../lib/flexible.js"></script>
+    <script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+    <script src="../lib/jquery-3.6.0.js"></script>
+    <script src="../lib/lazyLoad.js"></script>
+    <script src="../lib/touch-0.2.14.js"></script>
+    <script src="../lib/bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <script src="../lib/LCalendar/LCalendar.js"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/swiper5.4.5/swiper.min.css">
+    <link rel="stylesheet" href="../iconfont/font_8198ydbdgvw/iconfont.css">
+    <link rel="stylesheet" href="../css/日期选择.css">
+    <link rel="stylesheet" href="../lib/calendar/css/calendar-pro.css">
+    <title>日期选择</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="content">
+                <!-- haeder -->
+                <header>
+					<i></i>
+					<span>选择日期和人数</span>
+					<span>起价说明</span>
+                </header>
+				<section>
+					<!-- 日期选择 -->
+					<div class="calendar-box demo-box"></div>
+					<ul class="money">
+						<li class="person-price">
+							<div class="person">成人<p>￥<span class="price">0</span>/人</p></div>
+							<div class="btn">
+								<p class="jian">-</p>
+								<p class="num">0</p>
+								<p class="jia">+</p>
+							</div>
+						</li>
+						<li class="children">
+							<div class="child">儿童</div>
+							<div class="btn-children btn">
+								<p class="jian-children">-</p>
+								<p class="num-children">0</p>
+								<p class="jia-children">+</p>
+							</div>
+						</li>
+						<li class="baby">
+							<input type="checkbox" name="baby" id="">
+							<label for="baby">携带幼儿	<span>0~2岁</span></label>
+						</li>
+						<li class="tips">
+							<div class="tips-i">
+								<img src="../img/我的/images/tips_03.png" alt="">
+							</div>
+							<div class="tip">
+								最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人,<span>*以上价格均为起价</span>
+							</div>
+						</li>
+					</ul>
+				</section>
+				<footer>
+					<p class="end-left">
+						<span class="color">总额：￥<span class="sum">0</span></span>
+						<span class="color"> 明细></span>
+					</p>
+					<p class="end-btn">
+						<span>下一步</span>
+						&nbsp;
+						<span>选择资源</span>
+					</p>
+				</footer>
+            </div>
+        </div>
+    <script src="../lib/swiper5.4.5/swiper.min.js"></script>
+    <script src="../lib/calendar/js/calendar-pro.js"></script>
+    <script>
+    //lazyload
+    $(function() {
+        $("img.lazyload").lazyload()
+    });
+    //batterscroll
+    window.onload = function () {
+        bs.refresh();
+        const bs = new BScroll('.wrapper');
+    }
+    //日期选择
+    $('.calendar-box').calendar({
+			ele : '.demo-box', //依附
+			title : '选择预约时间',
+			beginDate : '2017-10-07',
+			endDate : '2017-12-04',
+			data : [
+				{date:'2017-10-07',data:'1072'},
+				{date:'2017-10-08',data:'1082'},
+				{date:'2017-10-09',data:'1092'},
+				{date:'2017-10-10',data:'1102'},
+				{date:'2017-10-11',data:'1112'},
+				{date:'2017-10-12',data:'1122'},
+				{date:'2017-10-13',data:'1132'},
+				{date:'2017-10-14',data:'1142'},
+				{date:'2017-10-15',data:'1156'},
+				{date:'2017-10-16',data:'1166'},
+				{date:'2017-10-17',data:'1176'},
+				{date:'2017-10-18',data:'1186'},
+				{date:'2017-10-19',data:'1196'},
+				{date:'2017-10-20',data:'1206'},
+				{date:'2017-10-21',data:'1216'},
+				{date:'2017-10-22',data:'1226'},
+				{date:'2017-10-23',data:'1236'},
+				{date:'2017-10-24',data:'1246'},
+				{date:'2017-10-25',data:'1256'},
+				{date:'2017-10-26',data:'1266'},
+				{date:'2017-10-27',data:'1276'},
+				{date:'2017-10-28',data:'1286'},
+				{date:'2017-10-29',data:'1296'},
+				{date:'2017-10-30',data:'1306'},
+				{date:'2017-10-31',data:'1313'},
+				{date:'2017-11-01',data:'1013'},
+				{date:'2017-11-02',data:'1023'},
+				{date:'2017-11-03',data:'1033'},
+				{date:'2017-11-04',data:'1043'},
+				{date:'2017-11-05',data:'1053'},
+				{date:'2017-11-06',data:'1063'},
+				{date:'2017-11-07',data:'1073'},
+				{date:'2017-11-08',data:'1083'},
+				{date:'2017-11-09',data:'1093'},
+				{date:'2017-11-10',data:'1103'},
+				{date:'2017-11-11',data:'1113'},
+				{date:'2017-11-12',data:'1122'},
+				{date:'2017-11-13',data:'1139'},
+				{date:'2017-11-14',data:'1149'},
+				{date:'2017-11-15',data:'1159'},
+				{date:'2017-11-16',data:'1169'},
+				{date:'2017-11-17',data:'1179'},
+				{date:'2017-11-18',data:'1189'},
+				{date:'2017-11-19',data:'1199'},
+				{date:'2017-11-20',data:'1209'},
+				{date:'2017-11-21',data:'1219'},
+				{date:'2017-11-22',data:'1229'},
+				{date:'2017-11-23',data:'1239'},
+				{date:'2017-11-24',data:'1249'},
+				{date:'2017-11-25',data:'1259'},
+				{date:'2017-11-26',data:'1267'},
+				{date:'2017-11-27',data:'1277'},
+				{date:'2017-11-28',data:'1287'},
+				{date:'2017-11-29',data:'1297'},
+				{date:'2017-11-30',data:'1307'},
+				{date:'2017-12-01',data:'1217'},
+				{date:'2017-12-02',data:'1227'},
+				{date:'2017-12-03',data:'1237'},
+				{date:'2017-12-04',data:'1247'},
+			]
+		});
+		//价格
+			var data;
+			var price_text = parseFloat($('.price').text());
+			var num;
+			var price;
+			$('.ht-rili-td').click(function () {
+				price_text = parseFloat($('.price').text());
+				data = parseFloat($('.calendar-box').calendarGetActive().money);
+				$('.price').text(data);
+				$('.num').text(1);
+				$('.sum').text(data);
+			});
+			$('.jia').click(function () {
+				num = parseFloat($('.num').text()) + 1;
+				price_text = parseFloat($('.price').text()) * num;
+				if (num > 1) {
+					$('.num').text(num);
+					$('.sum').text(price_text);
+				} else {
+					$('.num').text(0);
+					$('.sum').text(0);
+					$('.price').text(0);
+				}
+			})
+			$('.jian').click(function () {
+				num = parseFloat($('.num').text()) - 1;
+				price = parseFloat($('.price').text());
+				price_text = parseFloat($('.price').text()) * num;
+				if (num <= 1) {
+					$('.num').text(1);
+					$('.sum').text(price);
+					$('.price').text(price);
+				} else {
+					$('.num').text(num);
+					$('.sum').text(price_text);
+				}
+			})
+			//儿童
+			var num_children;
+			$('.jia-children').click(function () {
+				num_children = parseFloat($('.num-children').text()) + 1;
+				$('.num-children').text(num_children);
+			})
+			$('.jian-children').click(function () {
+				num_children = parseFloat($('.num-children').text()) - 1;
+				if (num_children <= 0) {
+					$('.num-children').text(0);
+				} else {
+					$('.num-children').text(num_children);
+				}
+			})
+			$('.end-btn').click(function () {
+				window.open('../html/选择资源.html')
+			})
+    </script>
+    </body>
+    </html>

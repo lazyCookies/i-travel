@@ -1,0 +1,152 @@
+header {
+  width: 100%;
+  padding: 0.2667rem /* 20px -> .2667rem */ 0rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1448ae;
+  color: #fff;
+  align-items: center;
+}
+header i {
+  display: inline-block;
+  background: url(../img/sprites.png) top 3.533% left 13.867% no-repeat;
+  width: 0.24rem /* 18px -> .24rem */;
+  height: 0.44rem /* 33px -> .44rem */;
+  background-size: 4100% auto;
+}
+header span {
+  display: inline-block;
+}
+header span:nth-child(2) {
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+}
+header span:last-child {
+  font-size: 0.32rem /* 24px -> .32rem */;
+}
+/* content */
+section {
+  width: 100%;
+  padding-bottom: 1.8667rem /* 140px -> 1.8667rem */;
+}
+.money {
+  margin: 0.2667rem /* 20px -> .2667rem */ 0rem 0rem 0.4rem /* 30px -> .4rem */;
+}
+.money li {
+  border-bottom: 0.0267rem /* 2px -> .0267rem */ solid #dcdcdc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2667rem /* 20px -> .2667rem */ 0.2667rem /* 20px -> .2667rem */
+    0.2667rem /* 20px -> .2667rem */ 0%;
+}
+.person {
+  color: #666;
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+}
+.person p {
+  color: #f88412;
+  display: inline-block;
+  padding-left: 0.2667rem /* 20px -> .2667rem */;
+}
+.btn {
+  width: 2.4267rem /* 182px -> 2.4267rem */;
+  border: 0.0267rem /* 2px -> .0267rem */ solid #cccccc;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+  height: 0.7733rem /* 58px -> .7733rem */;
+  padding: 0%;
+}
+.btn p {
+  display: inline-block;
+  width: 0.6933rem /* 52px -> .6933rem */;
+  height: 0.7733rem /* 58px -> .7733rem */;
+  text-align: center;
+}
+.btn p:nth-child(2) {
+  width: 1.0533rem /* 79px -> 1.0533rem */;
+  height: 0.72rem /* 54px -> .72rem */;
+  color: #666666;
+  background-color: #e5e5e5;
+}
+.child {
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+}
+.money .baby {
+  align-items: center;
+  justify-content: inherit;
+}
+.baby input {
+  width: 0.4667rem /* 35px -> .4667rem */;
+  height: 0.4667rem /* 35px -> .4667rem */;
+}
+.baby label {
+  color: #666666;
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+  font-weight: 500;
+  padding-left: 0.2667rem /* 20px -> .2667rem */;
+}
+.baby span {
+  font-size: 0.3733rem /* 28px -> .3733rem */;
+}
+.money .tips {
+  border: none;
+  justify-content: inherit;
+  align-items: inherit;
+}
+.tip {
+  padding-left: 0.2667rem /* 20px -> .2667rem */;
+}
+.tip span {
+  display: inline-block;
+  color: #f88412;
+}
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  background-color: #fff;
+}
+footer p {
+  margin: 0%;
+}
+.end-left {
+  border-top: 0.0267rem /* 2px -> .0267rem */ solid #dcdcdc;
+  border-right: 0.0267rem /* 2px -> .0267rem */ solid #dcdcdc;
+  width: 5.32rem /* 399px -> 5.32rem */;
+  display: flex;
+  align-items: center;
+  width: 53.2%;
+  justify-content: center;
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+}
+footer .end-left span:last-child {
+  font-size: 0.32rem /* 24px -> .32rem */;
+}
+.end-btn span:first-child {
+  font-size: 0.4267rem /* 32px -> .4267rem */;
+}
+.end-btn {
+  width: 47%;
+  background-color: #f1a30f;
+  height: 1.32rem /* 99px -> 1.32rem */;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.end-btn span:last-child {
+  font-size: 0.3733rem /* 28px -> .3733rem */;
+}
+footer span {
+  display: inline-block;
+}
+.color {
+  color: #f88412;
+}
+.sum {
+  padding-right: 0.2667rem /* 20px -> .2667rem */;
+}
